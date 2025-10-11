@@ -4,8 +4,8 @@ import CurrentlyBoard from "./components/currentlyBoard";
 function App() {
   return (
     <main>
-      {/* <CurrentlyBoard /> */}
-      <CreatePost />
+      <CurrentlyBoard />
+      {/* <CreatePost /> */}
     </main>
   );
 }
