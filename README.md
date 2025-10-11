@@ -44,12 +44,19 @@ I'm building **whatRu?** to strengthen my understanding of component-based desig
 This project helps me practice:
 
 Building reusable React components
+
 Managing state using useState
+
 Designing clean layouts with Tailwind CSS
+
 Working with icons and color systems using lucide-react
+
 Creating responsive and mobile-friendly designs
+
 Adding interactivity (modals, filters, and likes)
+
 Structuring React projects in a maintainable way
+
 Building UI that feels smooth and engaging
 
 
@@ -57,12 +64,19 @@ Building UI that feels smooth and engaging
 I plan to keep improving this project as I learn more by adding:
 
 Authentication (Supabase or Firebase)
+
 Backend integration for persistent posts
+
 Comments and replies system
+
 Image or link attachments in posts
+
 Relative timestamps (e.g., "5m ago")
+
 Category-based color themes
+
 Light/dark mode toggle
+
 Small media previews for "Listening" posts
 
 
