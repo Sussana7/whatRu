@@ -44,12 +44,19 @@ I'm building **whatRu?** to strengthen my understanding of component-based desig
 This project helps me practice:
 
 Building reusable React components
+
 Managing state using useState
+
 Designing clean layouts with Tailwind CSS
+
 Working with icons and color systems using lucide-react
+
 Creating responsive and mobile-friendly designs
+
 Adding interactivity (modals, filters, and likes)
+
 Structuring React projects in a maintainable way
+
 Building UI that feels smooth and engaging
 
 
