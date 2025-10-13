@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Plus, Heart, Book, Headphones, Briefcase } from "lucide-react";
 import CreatePost from "./CreatePost";
+import mockPosts from "./mockPosts.json";
 
 function CurrentlyBoard() {
   const [showModal, setShowModal] = useState(false);
@@ -11,6 +12,8 @@ function CurrentlyBoard() {
     working: { icon: Briefcase, color: "bg-green-500", label: "Working on" },
     doing: { icon: Heart, color: "bg-pink-500", label: "Doing" },
   };
+  const [posts, setPosts] = useState(mockPosts);
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-200">
       <div className="bg-white flex items-center justify-between px-8 py-8">
