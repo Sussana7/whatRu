@@ -12,6 +12,47 @@ I'm building **whatRu?** to strengthen my understanding of component-based desig
 
 ---
 
+## 📅 Development Progress
+
+### **Day 1** 
+- Set up project structure with Vite + React + Tailwind CSS
+- Created header with app name and "Share" button
+- Built CreatePost modal component with form inputs
+- Created README and initialized GitHub repository
+
+
+---
+
+### **Day 2**  
+- Designed filter buttons for categories (All, Reading, Listening, Working on, Doing)
+- Added filter state management and conditional styling
+- Created mockPosts.json with sample data
+- Built PostCard component to display individual posts
+- Implemented filtering functionality - posts filter by category
+- Fixed import issues and made the app fully functional
+
+![Day 2 Progress](<img width="1920" height="946" alt="image" src="https://github.com/user-attachments/assets/378aab81-5ba2-44a4-ba10-9bc2891a9b18" />
+)
+*Fully functional feed with filters and post cards displaying all categories*
+
+---
+
+### **Day 3** (Coming Soon)
+- Make CreatePost form functional (add new posts to feed)
+- Add like/unlike functionality to posts
+- Add close button to CreatePost modal
+- Sort posts by newest first
+
+### **Future Days**
+- Add delete post functionality
+- Implement timestamp formatting (relative time)
+- Add post validation (no empty posts)
+- Create empty state when no posts match filter
+- Add animations and transitions
+- Improve mobile responsiveness
+
+---
+
 ## ✨ Features
 - **Live Feed:** View posts from people sharing what they're currently doing.  
 - **Create Posts:** Add your own "currently" moment via a clean modal form.  
@@ -40,59 +81,45 @@ I'm building **whatRu?** to strengthen my understanding of component-based desig
 - **Modal:** Clean form to share a new post with inputs for name, category, and content.
 
 ---
-🎯 Learning Goals
+
+## 🎯 Learning Goals
 This project helps me practice:
+- Building reusable React components
+- Managing state using useState
+- Designing clean layouts with Tailwind CSS
+- Working with icons and color systems using lucide-react
+- Creating responsive and mobile-friendly designs
+- Adding interactivity (modals, filters, and likes)
+- Structuring React projects in a maintainable way
+- Building UI that feels smooth and engaging
 
-Building reusable React components
+---
 
-Managing state using useState
-
-Designing clean layouts with Tailwind CSS
-
-Working with icons and color systems using lucide-react
-
-Creating responsive and mobile-friendly designs
-
-Adding interactivity (modals, filters, and likes)
-
-Structuring React projects in a maintainable way
-
-Building UI that feels smooth and engaging
-
-
-💡 Future Improvements
+## 💡 Future Improvements
 I plan to keep improving this project as I learn more by adding:
+- Authentication (Supabase or Firebase)
+- Backend integration for persistent posts
+- Comments and replies system
+- Image or link attachments in posts
+- Relative timestamps (e.g., "5m ago")
+- Category-based color themes
+- Light/dark mode toggle
+- Small media previews for "Listening" posts
 
-Authentication (Supabase or Firebase)
+---
 
-Backend integration for persistent posts
-
-Comments and replies system
-
-Image or link attachments in posts
-
-Relative timestamps (e.g., "5m ago")
-
-Category-based color themes
-
-Light/dark mode toggle
-
-Small media previews for "Listening" posts
-
-
-👩‍💻 Author
-Sussana Teye
-Frontend & AI Engineer in progress
+## 👩‍💻 Author
+**Sussana Teye**  
+Frontend & AI Engineer in progress  
 Currently learning React and Tailwind CSS through hands-on projects.
 
-GitHub
-LinkedIn(https://www.linkedin.com/in/sussana-teye?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BpLNJy5oqRD2LuCb3Wv8pew%3D%3D)
+- [GitHub](https://github.com/Sussana7)
+- [LinkedIn](https://www.linkedin.com/in/sussana-teye?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BpLNJy5oqRD2LuCb3Wv8pew%3D%3D)
+
+---
 
 
-🪞 Preview
-Coming soon — Screenshots & Live Demo
-
-
+---
 
 ## 🚀 Getting Started
 
@@ -102,9 +129,5 @@ git clone https://github.com/Sussana7/whatRu.git
 cd whatRu
 npm install
 npm run dev
-Open in your browser
-Visit http://localhost:5173/ (or the port shown in your terminal). 
-
 📜 License
 This project is open-source and available under the MIT License.
-
