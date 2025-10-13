@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Plus, Heart, Book, Headphones, Briefcase } from "lucide-react";
 import CreatePost from "./CreatePost";
-import mockPosts from "./mockPosts.json";
+import mockPosts from "../mockPosts.json";
+import PostCard from "./PostCard";
 
 function CurrentlyBoard() {
   const [showModal, setShowModal] = useState(false);
@@ -54,6 +55,20 @@ function CurrentlyBoard() {
               {label}
             </button>
           ))}
+        </div>
+      </section>
+      <section className="px-10 py-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {posts
+            .filter((post) => filter === "all" || post.category === filter)
+            .map((post) => (
+              <PostCard
+                key={post.id}
+                post={post}
+                categoryIcon={categories[post.category].icon}
+                categoryColor={categories[post.category].color}
+              />
+            ))}
         </div>
       </section>
     </main>
