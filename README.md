@@ -31,7 +31,8 @@ I'm building **whatRu?** to strengthen my understanding of component-based desig
 - Implemented filtering functionality - posts filter by category
 - Fixed import issues and made the app fully functional
 
-![Day 2 Progress](<img width="1920" height="946" alt="image" src="https://github.com/user-attachments/assets/378aab81-5ba2-44a4-ba10-9bc2891a9b18" />
+![Day 2 Progress](<img width="1920" height="946" alt="screencapture-localhost-5173-2025-10-13-16_01_45" src="https://github.com/user-attachments/assets/372c798f-17df-4aad-9d5e-d3e5a6b7ff51" />
+
 )
 *Fully functional feed with filters and post cards displaying all categories*
 
