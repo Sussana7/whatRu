@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "username": "Sussana",
+    "category": "reading",
+    "content": "Harry Potter",
+    "timestamp": "2 mins ago",
+    "likes": 5
+  },
+  {
+    "id": 2,
+    "username": "Wekia",
+    "category": "listening",
+    "content": "Blinding Lights by The Weekend",
+    "timestamp": "5 mins ago",
+    "likes": 8
+  },
+  {
+    "id": 3,
+    "username": "Wedam",
+    "category": "working",
+    "content": "Building a React app",
+    "timestamp": "10 mins ago",
+    "likes": 3
+  },
+  {
+    "id": 4,
+    "username": "Gwen",
+    "category": "doing",
+    "content": "Cooking jollof rice",
+    "timestamp": "15 mins ago",
+    "likes": 12
+  },
+  {
+    "id": 5,
+    "username": "Dorcas",
+    "category": "reading",
+    "content": "Atomic Habits by James Clear",
+    "timestamp": "20 mins ago",
+    "likes": 7
+  }
+]
