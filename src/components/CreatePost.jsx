@@ -5,7 +5,7 @@ function CreatePost({
   newPost,
   setNewPost,
   handleSubmit,
-  categories,
+  // categories,
 }) {
   return (
     <div
@@ -35,6 +35,10 @@ function CreatePost({
             </label>
             <input
               type="text"
+              value={newPost.username}
+              onChange={(e) =>
+                setNewPost({ ...newPost, username: e.target.value })
+              }
               className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-800"
               placeholder="Sussana"
             />

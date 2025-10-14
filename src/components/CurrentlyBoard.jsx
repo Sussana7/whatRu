@@ -24,6 +24,7 @@ function CurrentlyBoard() {
 
     const postToAdd = {
       id: posts.length + 1,
+      username: newPost.username,
       title: newPost.title,
       content: newPost.content,
       category: newPost.category,
@@ -34,6 +35,7 @@ function CurrentlyBoard() {
     setPosts([postToAdd, ...posts]);
     setShowModal(false);
     setNewPost({
+      username: "",
       title: "",
       content: "",
       category: "reading",
