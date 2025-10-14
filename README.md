@@ -1,4 +1,4 @@
-whatRu? 🌟
+WhatRu? 🌟
 A simple, modern social feed for sharing what you're doing — right now.
 
 🖼️ Overview
