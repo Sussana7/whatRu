@@ -1,7 +1,9 @@
 WhatRu? 🌟
+
 A simple, modern social feed for sharing what you're doing — right now.
 
 🖼️ Overview
+
 whatRu? is a sleek and minimal social feed app built with React and Tailwind CSS.
 It's inspired by the idea of capturing the present moment — whether you're reading, listening, working on something, or just doing life.
 
