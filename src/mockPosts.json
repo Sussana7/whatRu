@@ -3,40 +3,45 @@
     "id": 1,
     "username": "Sussana",
     "category": "reading",
-    "content": "Harry Potter",
-    "timestamp": "2 mins ago",
+    "title": "Harry Potter",
+    "content": "Just started this amazing series!",
+    "timestamp": "2/10/2025",
     "likes": 5
   },
   {
     "id": 2,
     "username": "Wekia",
     "category": "listening",
-    "content": "Blinding Lights by The Weekend",
-    "timestamp": "5 mins ago",
+    "title": "Blinding Lights by The Weekend",
+    "content": "This song is stuck in my head",
+    "timestamp": "2/10/2025",
     "likes": 8
   },
   {
     "id": 3,
     "username": "Wedam",
     "category": "working",
-    "content": "Building a React app",
-    "timestamp": "10 mins ago",
+    "title": "Building a React app",
+    "content": "Day 3 of the project, making great progress!",
+    "timestamp": "2/10/2025",
     "likes": 3
   },
   {
     "id": 4,
     "username": "Gwen",
     "category": "doing",
-    "content": "Cooking jollof rice",
-    "timestamp": "15 mins ago",
+    "title": "Cooking jollof rice",
+    "content": "The secret is in the tomato paste",
+    "timestamp": "2/10/2025",
     "likes": 12
   },
   {
     "id": 5,
     "username": "Dorcas",
     "category": "reading",
-    "content": "Atomic Habits by James Clear",
-    "timestamp": "20 mins ago",
+    "title": "Atomic Habits by James Clear",
+    "content": "Small habits lead to big changes",
+    "timestamp": "2/10/2025",
     "likes": 7
   }
 ]

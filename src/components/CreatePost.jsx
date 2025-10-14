@@ -1,6 +1,12 @@
 import { X } from "lucide-react";
 
-function CreatePost({ onClose }) {
+function CreatePost({
+  onClose,
+  newPost,
+  setNewPost,
+  handleSubmit,
+  categories,
+}) {
   return (
     <div
       className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50"
@@ -22,7 +28,7 @@ function CreatePost({ onClose }) {
           </button>
         </div>
 
-        <div className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-sm font-medium text-slate-700 mb-2">
               Your Name
@@ -38,7 +44,13 @@ function CreatePost({ onClose }) {
             <label className="block text-sm font-medium text-slate-700 mb-2">
               Currently...
             </label>
-            <select className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-800">
+            <select
+              value={newPost.category}
+              onChange={(e) =>
+                setNewPost({ ...newPost, category: e.target.value })
+              }
+              className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-800"
+            >
               <option value="reading">Reading</option>
               <option value="listening">Listening</option>
               <option value="working">Working on</option>
@@ -52,8 +64,27 @@ function CreatePost({ onClose }) {
             </label>
             <input
               type="text"
+              value={newPost.title}
+              onChange={(e) =>
+                setNewPost({ ...newPost, title: e.target.value })
+              }
               className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-800"
               placeholder="Harry Potter by J.K Rowling"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-slate-700 mb-2">
+              Tell us more (optional)
+            </label>
+            <textarea
+              value={newPost.content}
+              onChange={(e) =>
+                setNewPost({ ...newPost, content: e.target.value })
+              }
+              className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-800"
+              placeholder="Add any details..."
+              rows="3"
             />
           </div>
 
@@ -63,7 +94,7 @@ function CreatePost({ onClose }) {
           >
             Share
           </button>
-        </div>
+        </form>
       </div>
     </div>
   );

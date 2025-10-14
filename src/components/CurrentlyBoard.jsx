@@ -14,6 +14,31 @@ function CurrentlyBoard() {
     doing: { icon: Heart, color: "bg-pink-500", label: "Doing" },
   };
   const [posts, setPosts] = useState(mockPosts);
+  const [newPost, setNewPost] = useState({
+    title: "",
+    content: "",
+    category: "reading",
+  });
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const postToAdd = {
+      id: posts.length + 1,
+      title: newPost.title,
+      content: newPost.content,
+      category: newPost.category,
+      likes: 0,
+      timestamp: new Date().toLocaleDateString(),
+    };
+
+    setPosts([postToAdd, ...posts]);
+    setShowModal(false);
+    setNewPost({
+      title: "",
+      content: "",
+      category: "reading",
+    });
+  };
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-200">
@@ -32,7 +57,15 @@ function CurrentlyBoard() {
           </button>
         </div>
       </div>
-      {showModal && <CreatePost onClose={() => setShowModal(false)} />}
+      {showModal && (
+        <CreatePost
+          onClose={() => setShowModal(false)}
+          newPost={newPost}
+          setNewPost={setNewPost}
+          handleSubmit={handleSubmit}
+          categories={categories}
+        />
+      )}
 
       <section className="flex gap-6 px-10 py-4">
         <div className="flex gap-2 overflow-x-auto">
