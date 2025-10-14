@@ -32,7 +32,7 @@ function CurrentlyBoard() {
           </button>
         </div>
       </div>
-      {showModal && <CreatePost />}
+      {showModal && <CreatePost onClose={() => setShowModal(false)} />}
 
       <section className="flex gap-6 px-10 py-4">
         <div className="flex gap-2 overflow-x-auto">

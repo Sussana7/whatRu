@@ -1,18 +1,23 @@
 import { X } from "lucide-react";
 
-function CreatePost() {
-  const handleClose = () => {
-    window.location.reload(); 
-  };
+function CreatePost({ onClose }) {
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-      <div className="bg-white rounded-2xl max-w-md w-full p-6 shadow-xl">
+    <div
+      className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50"
+      onClick={onClose}
+    >
+      <div
+        className="bg-white rounded-2xl max-w-md w-full p-6 shadow-xl"
+        onClick={(e) => e.stopPropagation()}
+      >
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-xl font-bold text-red-800">
             Share what you're up to
           </h2>
-          <button className="text-slate-600 hover:text-red-800"
-            onClick={handleClose}>
+          <button
+            className="text-slate-600 hover:text-red-800"
+            onClick={onClose}
+          >
             <X size={24} />
           </button>
         </div>
