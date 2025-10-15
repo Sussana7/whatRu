@@ -1,14 +1,17 @@
-import CreatePost from "./components/CreatePost";
 import CurrentlyBoard from "./components/currentlyBoard";
-import PostCard from "./components/PostCard";
+import ThemeToggle from "./components/ThemeToggle"; // Add this import
+import { useState } from "react";
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
   return (
-    <main>
-      <CurrentlyBoard />
-      {/* <CreatePost /> */}
-      {/* <PostCard /> */}
-    </main>
+    <div className={isDarkMode ? "dark" : ""}>
+      <main className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+        <ThemeToggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+        <CurrentlyBoard />
+      </main>
+    </div>
   );
 }
 

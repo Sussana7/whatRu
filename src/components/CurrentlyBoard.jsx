@@ -3,6 +3,7 @@ import { Plus, Heart, Book, Headphones, Briefcase } from "lucide-react";
 import CreatePost from "./CreatePost";
 import mockPosts from "../mockPosts.json";
 import PostCard from "./PostCard";
+import ThemeToggle from "./ThemeToggle";
 
 function CurrentlyBoard() {
   const [showModal, setShowModal] = useState(false);
@@ -49,7 +50,9 @@ function CurrentlyBoard() {
           <span className="text-red-800 font-bold text-[1.5rem]">WhatRu</span>
           <span className="text-gray-500">What's everyone up to?</span>
         </div>
-        <div>
+
+        <div className="flex items-center gap-4">
+          <ThemeToggle />
           <button
             className="bg-red-800 text-white rounded-full flex items-center px-4 py-2 gap-2 hover:bg-black"
             onClick={() => setShowModal(true)}
