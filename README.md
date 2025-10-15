@@ -26,6 +26,10 @@ Day 2 ✅ COMPLETED
 - Implemented filtering functionality - posts filter by category
 - Fixed import issues and made the app fully functional
 
+Below is an image...
+<img width="1920" height="946" alt="screencapture-localhost-5173-2025-10-13-16_01_45" src="https://github.com/user-attachments/assets/3f13c65f-8be4-4feb-803a-f020e1348892" />
+
+
 Day 3 ✅ COMPLETED
 - Made CreatePost form functional (add new posts to feed)
 - Fixed modal closing (no page reload, smooth transitions)
@@ -39,6 +43,10 @@ Day 3 ✅ COMPLETED
 - Passing functions as props
 - Form submission with preventDefault()
 - Updating arrays in state (adding items to beginning with spread operator)
+
+Below is an image...
+<img width="741" height="813" alt="image" src="https://github.com/user-attachments/assets/ddd0cf9f-4f2d-4481-94bf-8f55e02bcdb9" />
+
 
  Day 4 - Dark Mode Implementation ✅ COMPLETED
 - Theme toggle component with sun/moon icons
@@ -58,6 +66,11 @@ Day 3 ✅ COMPLETED
 * Applying `dark:` variants to style elements differently in dark mode
 * Managing theme state with useState
 * Props destructuring in React components
+
+Below is an image...
+<img width="1920" height="946" alt="image" src="https://github.com/user-attachments/assets/571c0e2b-4cad-4b9c-a4ca-4b629dbcd84f" />
+<img width="1920" height="946" alt="image" src="https://github.com/user-attachments/assets/27e6a189-48a1-4193-ac85-1c39fbba9945" />
+
 
 ---
 
