@@ -45,6 +45,7 @@ Day 3 ✅ COMPLETED
 - Updating arrays in state (adding items to beginning with spread operator)
 
 Below is an image...
+
 <img width="741" height="813" alt="image" src="https://github.com/user-attachments/assets/ddd0cf9f-4f2d-4481-94bf-8f55e02bcdb9" />
 
 
@@ -68,7 +69,8 @@ Below is an image...
 * Props destructuring in React components
 
 Below is an image...
-<img width="1920" height="946" alt="image" src="https://github.com/user-attachments/assets/571c0e2b-4cad-4b9c-a4ca-4b629dbcd84f" />
+<img width="1920" height="946" alt="image" src="https://github.com/user-attachments/assets/f2e3048d-c658-4816-b7f6-44f2dcc3fa1e" />
+
 <img width="1920" height="946" alt="image" src="https://github.com/user-attachments/assets/27e6a189-48a1-4193-ac85-1c39fbba9945" />
 
 
