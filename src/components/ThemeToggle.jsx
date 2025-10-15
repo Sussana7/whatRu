@@ -1,6 +1,6 @@
 import { MoonIcon, SunIcon } from "lucide-react";
 
-function ThemeToggle(isDarkMode, setIsDarkMode) {
+function ThemeToggle({isDarkMode, setIsDarkMode}) {
   return (
     <button
       onClick={() => setIsDarkMode(!isDarkMode)}

@@ -5,7 +5,7 @@ import mockPosts from "../mockPosts.json";
 import PostCard from "./PostCard";
 import ThemeToggle from "./ThemeToggle";
 
-function CurrentlyBoard() {
+function CurrentlyBoard({ isDarkMode, setIsDarkMode }) {
   const [showModal, setShowModal] = useState(false);
   const [filter, setFilter] = useState("all");
   const categories = {
@@ -44,17 +44,21 @@ function CurrentlyBoard() {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-200">
-      <div className="bg-white flex items-center justify-between px-8 py-8">
+    <main className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-200 dark:from-gray-900 dark:to-gray-800">
+      <div className="bg-white dark:bg-gray-800 flex items-center justify-between px-8 py-8">
         <div className="flex flex-col space-y-1 gap-0.5">
-          <span className="text-red-800 font-bold text-[1.5rem]">WhatRu</span>
-          <span className="text-gray-500">What's everyone up to?</span>
+          <span className="text-red-800 dark:text-red-400 font-bold text-[1.5rem]">
+            WhatRu
+          </span>
+          <span className="text-gray-500 dark:text-gray-400">
+            What's everyone up to?
+          </span>
         </div>
 
         <div className="flex items-center gap-4">
-          <ThemeToggle />
+          <ThemeToggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
           <button
-            className="bg-red-800 text-white rounded-full flex items-center px-4 py-2 gap-2 hover:bg-black"
+            className="bg-red-800 text-white rounded-full flex items-center px-4 py-2 gap-2 hover:bg-black dark:hover:bg-red-900"
             onClick={() => setShowModal(true)}
           >
             <Plus />
@@ -75,7 +79,7 @@ function CurrentlyBoard() {
       <section className="flex gap-6 px-10 py-4">
         <div className="flex gap-2 overflow-x-auto">
           <button
-            className="bg-red-800 text-white rounded-full flex items-center px-4 py-2 gap-2 hover:bg-black"
+            className="bg-red-800 text-white rounded-full flex items-center px-4 py-2 gap-2 hover:bg-black dark:hover:bg-red-900"
             onClick={() => setFilter("all")}
           >
             All
@@ -87,7 +91,7 @@ function CurrentlyBoard() {
               className={`px-4 py-2 rounded-full flex items-center gap-2 ${
                 filter === key
                   ? `${color} text-white`
-                  : "bg-white text-slate-600 border border-slate-300 hover:bg-slate-100"
+                  : "bg-white dark:bg-gray-700 text-slate-600 dark:text-gray-300 border border-slate-300 dark:border-gray-600 hover:bg-slate-100 dark:hover:bg-gray-600"
               }`}
             >
               {label}
