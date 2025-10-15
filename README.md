@@ -40,47 +40,55 @@ Day 3 ✅ COMPLETED
 - Form submission with preventDefault()
 - Updating arrays in state (adding items to beginning with spread operator)
 
-Day 4 (Tomorrow)
-- Add like/unlike functionality to posts
-- Add comments section (display and add comments)
-- Sort posts by newest first
-- Edit post functionality
-- User profiles (click on username to see all their posts)
-- Search functionality to find posts
-- Share/copy post link
+ Day 4 - Dark Mode Implementation ✅ COMPLETED
+- Theme toggle component with sun/moon icons
+- Full dark mode support across entire application
+- Smooth transitions between light and dark themes
+- Dark mode styling for all components:
+  - CurrentlyBoard (main layout, header, filters)
+  - PostCard (individual post cards)
+  - CreatePost (modal form)
+  - ThemeToggle (toggle button itself)
+
+**What I Learned:**
+* Tailwind CSS dark mode configuration (`darkMode: 'class'`)
+* Lifting state up to App level for global theme control
+* Passing props down through component hierarchy
+* Using conditional classes for theme switching
+* Applying `dark:` variants to style elements differently in dark mode
+* Managing theme state with useState
+* Props destructuring in React components
+
+---
+
+### Day 5 (Tomorrow) - Interactive Features
+**Planned Features:**
+* Add like/unlike functionality to posts ❤️
+* Add comments section (display and add comments)
+* Sort posts by newest first
 
 **What I'll Learn Tomorrow:**
-- Updating nested state structures
-- Finding and modifying specific items in arrays
-- Rendering dynamic lists with nested data
-- Building more complex component interactions
-- State management with multiple levels of data
+* Updating nested state structures
+* Finding and modifying specific items in arrays
+* Rendering dynamic lists with nested data
+* Building more complex component interactions
+* State management with multiple levels of data
 
-Future Days
-- Delete post functionality
-- Implement relative timestamp formatting (e.g., "5m ago" instead of "10/14/2025")
-- Add post validation (prevent empty posts)
-- Create empty state when no posts match filter
-- Add smooth animations and transitions
-- Improve mobile responsiveness
-- Dark mode toggle
-- Keyboard shortcuts
-- Post reactions (beyond just likes)
-- Follow users
-- Notification system for likes/comments
-- Drafts (save posts before publishing)
-- User authentication (Supabase or Firebase)
-- Backend integration for persistent posts
-- Image or link attachments in posts
+## 🎨 Color Palette
 
-✨ Features
-- Live Feed: View posts from people sharing what they're currently doing
-- Create Posts: Add your own "currently" moment via a clean modal form with your name, category, title, and description
-- Filter by Category: Choose between Reading, Listening, Working On, or Doing
-- Like System: Show appreciation for posts (coming Day 4)
-- Comments: Add and view comments on posts (coming Day 4)
-- Beautiful UI: Soft gradients, smooth transitions, and a clean modern look
-- Responsive Design: Optimized for both mobile and desktop layouts
+**Light Mode:**
+* Background: Slate gradients (50-200)
+* Cards: White with subtle shadows
+* Primary: Red-800
+* Text: Gray-900, Gray-700, Gray-500
+
+**Dark Mode:**
+* Background: Gray gradients (900-800)
+* Cards: Gray-800 with darker shadows
+* Primary: Red-400
+* Text: White, Gray-300, Gray-400
+
+---
 
 🧩 Tech Stack
 Technology | Purpose
@@ -98,6 +106,48 @@ Vite | Build tool and dev server
 - Modal: Clean form to share a new post with inputs for username, category, title, and content
 - Post Card: Displays username, timestamp, content, category icon, and like/comment buttons
 
+
+## ✨ Current Features
+
+* **Live Feed**: View posts from people sharing what they're currently doing
+* **Create Posts**: Add your own "currently" moment via a clean modal form with your name, category, title, and description
+* **Filter by Category**: Choose between Reading, Listening, Working On, or Doing
+* **Dark Mode**: Toggle between light and dark themes with smooth transitions
+* **Beautiful UI**: Soft gradients, smooth transitions, and a clean modern look
+* **Responsive Design**: Optimized for both mobile and desktop layouts
+
+---
+
+## 🚀 Future Features
+
+### Near Term
+* Like/unlike functionality
+* Comments section
+* Edit post functionality
+* User profiles (click on username to see all their posts)
+* Search functionality to find posts
+* Share/copy post link
+
+### Mid Term
+* Delete post functionality
+* Relative timestamp formatting (e.g., "5m ago")
+* Post validation (prevent empty posts)
+* Empty state when no posts match filter
+* Smooth animations and transitions
+* Improved mobile responsiveness
+* Keyboard shortcuts
+* Post reactions (beyond just likes)
+
+### Long Term
+* Follow users
+* Notification system for likes/comments
+* Drafts (save posts before publishing)
+* User authentication (Supabase or Firebase)
+* Backend integration for persistent posts
+* Image or link attachments in posts
+
+---
+
 🎯 Learning Goals
 This project helps me practice:
 - Building reusable React components
@@ -112,9 +162,15 @@ This project helps me practice:
 - Structuring React projects in a maintainable way
 - Building UI that feels smooth and engaging
 
+---
+
+
 👩‍💻 Author
+
 Sussana Teye
+
 Frontend & AI Engineer in progress
+
 Currently learning React and Tailwind CSS through hands-on projects.
 
 GitHub
