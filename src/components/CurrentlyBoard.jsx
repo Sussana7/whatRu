@@ -47,7 +47,7 @@ function CurrentlyBoard({ isDarkMode, setIsDarkMode }) {
     <main className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-200 dark:from-gray-900 dark:to-gray-800">
       <div className="bg-white dark:bg-gray-800 flex items-center justify-between px-8 py-8">
         <div className="flex flex-col space-y-1 gap-0.5">
-          <span className="text-red-800 dark:text-red-400 font-bold text-[1.5rem]">
+          <span className="text-red-800 dark:text-red-800 font-bold text-[1.5rem]">
             WhatRu
           </span>
           <span className="text-gray-500 dark:text-gray-400">
