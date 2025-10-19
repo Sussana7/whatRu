@@ -51,6 +51,22 @@ function CurrentlyBoard({ isDarkMode, setIsDarkMode }) {
     );
   };
 
+  const handleAddComment = (postId, text) => {
+    setPosts((prevPosts) =>
+      prevPosts.map((p) =>
+        p.id === postId
+          ? {
+              ...p,
+              commentList: [
+                ...(p.commentList || []),
+                { username: "You", text },
+              ],
+            }
+          : p
+      )
+    );
+  };
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-200 dark:from-gray-900 dark:to-gray-800">
       <div className="bg-white dark:bg-gray-800 flex items-center justify-between px-8 py-8">
@@ -118,6 +134,7 @@ function CurrentlyBoard({ isDarkMode, setIsDarkMode }) {
                 categoryIcon={categories[post.category].icon}
                 categoryColor={categories[post.category].color}
                 onLike={() => handleLike(post.id)}
+                onAddComment={(text) => handleAddComment(post.id, text)}
               />
             ))}
         </div>

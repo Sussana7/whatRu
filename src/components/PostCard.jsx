@@ -6,9 +6,10 @@ function PostCard({
   categoryColor,
   categoryIcon: IconComponent,
   onLike,
-  onCommentClick,
+  onAddComment,
 }) {
   const [showComments, setShowComments] = useState(false);
+  const [commentText, setCommentText] = useState("");
 
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-md dark:shadow-gray-900/50">
@@ -88,9 +89,19 @@ function PostCard({
               <input
                 type="text"
                 placeholder="Add a comment..."
+                value={commentText}
+                onChange={(e) => setCommentText(e.target.value)}
                 className="flex-1 border rounded-lg px-3 py-1.5 text-sm dark:bg-gray-700 dark:border-gray-600 dark:text-white"
               />
-              <button className="bg-blue-500 text-white px-3 py-1.5 rounded-lg hover:bg-blue-600 text-sm">
+              <button
+                className="bg-blue-500 text-white px-3 py-1.5 rounded-lg hover:bg-blue-600 text-sm"
+                onClick={() => {
+                  if (commentText.trim() !== "") {
+                    onAddComment(commentText);
+                    setCommentText(""); 
+                  }
+                }}
+              >
                 Post
               </button>
             </div>
