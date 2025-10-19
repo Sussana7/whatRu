@@ -59,7 +59,7 @@ Below is an image...
   - CreatePost (modal form)
   - ThemeToggle (toggle button itself)
 
-**What I Learned:**
+**What I Learnt:**
 * Tailwind CSS dark mode configuration (`darkMode: 'class'`)
 * Lifting state up to App level for global theme control
 * Passing props down through component hierarchy
