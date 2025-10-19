@@ -43,6 +43,14 @@ function CurrentlyBoard({ isDarkMode, setIsDarkMode }) {
     });
   };
 
+  const handleLike = (postId) => {
+    setPosts(
+      posts.map((post) =>
+        post.id === postId ? { ...post, likes: post.likes + 1 } : post
+      )
+    );
+  };
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-200 dark:from-gray-900 dark:to-gray-800">
       <div className="bg-white dark:bg-gray-800 flex items-center justify-between px-8 py-8">
@@ -109,6 +117,7 @@ function CurrentlyBoard({ isDarkMode, setIsDarkMode }) {
                 post={post}
                 categoryIcon={categories[post.category].icon}
                 categoryColor={categories[post.category].color}
+                onLike={() => handleLike(post.id)}
               />
             ))}
         </div>

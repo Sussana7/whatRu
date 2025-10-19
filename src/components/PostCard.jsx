@@ -1,6 +1,11 @@
 import { Heart } from "lucide-react";
 
-function PostCard({ post, categoryColor, categoryIcon: IconComponent }) {
+function PostCard({
+  post,
+  categoryColor,
+  categoryIcon: IconComponent,
+  onLike,
+}) {
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-md dark:shadow-gray-900/50">
       <div className="flex gap-4">
@@ -22,7 +27,8 @@ function PostCard({ post, categoryColor, categoryIcon: IconComponent }) {
             {post.content}
           </p>
 
-          <button className="flex items-center gap-1 text-gray-500 dark:text-gray-400 hover:text-red-500 dark:hover:text-red-400">
+          <button className="flex items-center gap-1 text-gray-500 dark:text-gray-400 hover:text-red-500 dark:hover:text-red-400"
+            onClick={onLike}>
             <Heart size={16} />
             <span className="text-sm">{post.likes}</span>
           </button>
