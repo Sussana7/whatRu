@@ -6,7 +6,8 @@
     "title": "Harry Potter",
     "content": "Just started this amazing series!",
     "timestamp": "2/10/2025",
-    "likes": 5
+    "likes": 5,
+    "comments": []
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "title": "Blinding Lights by The Weekend",
     "content": "This song is stuck in my head",
     "timestamp": "2/10/2025",
-    "likes": 8
+    "likes": 8,
+    "comments": []
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "title": "Building a React app",
     "content": "Day 3 of the project, making great progress!",
     "timestamp": "2/10/2025",
-    "likes": 3
+    "likes": 3,
+    "comments": []
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "title": "Cooking jollof rice",
     "content": "The secret is in the tomato paste",
     "timestamp": "2/10/2025",
-    "likes": 12
+    "likes": 12,
+    "comments": []
   },
   {
     "id": 5,
@@ -42,6 +46,7 @@
     "title": "Atomic Habits by James Clear",
     "content": "Small habits lead to big changes",
     "timestamp": "2/10/2025",
-    "likes": 7
+    "likes": 7,
+    "comments": []
   }
 ]
