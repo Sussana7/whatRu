@@ -37,7 +37,7 @@ Day 3 ✅ COMPLETED
 - Posts now display with username, title, content, category, and timestamp
 - New posts appear at the top of the feed
 
-**What I Learned Today:**
+**What I Learnt Today:**
 - Controlled input components (value + onChange)
 - Lifting state up between parent and child components
 - Passing functions as props
