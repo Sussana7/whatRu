@@ -37,7 +37,7 @@ Day 3 ✅ COMPLETED
 - Posts now display with username, title, content, category, and timestamp
 - New posts appear at the top of the feed
 
-**What I Learned Today:**
+**What I Learnt Today:**
 - Controlled input components (value + onChange)
 - Lifting state up between parent and child components
 - Passing functions as props
@@ -76,18 +76,29 @@ Below is an image...
 
 ---
 
-### Day 5 (Tomorrow) - Interactive Features
+### Day 5 - Interactive Features ✅ COMPLETED
 **Planned Features:**
 * Add like/unlike functionality to posts ❤️
 * Add comments section (display and add comments)
-* Sort posts by newest first
 
-**What I'll Learn Tomorrow:**
+**What I Learnt:**
 * Updating nested state structures
 * Finding and modifying specific items in arrays
 * Rendering dynamic lists with nested data
 * Building more complex component interactions
 * State management with multiple levels of data
+
+
+### Day 6
+* Show the number of comments beside the comment icon
+* Sort posts by newest first
+* Icon that displays notification (For now, it’ll just be a static or inactive button, until backend setup)
+* Search bar to find posts (functionality to be added later)
+* Share button (functionality to be added later)
+
+### Day 7
+* 😄Emoji Integration in Comments with the use of API's
+
 
 ## 🎨 Color Palette
 
@@ -199,6 +210,9 @@ cd whatRu
 npm install
 npm run dev
 ```
+
+🌐 **Live Demo**  
+Coming soon.
 
 📜 License
 This project is open-source and available under the MIT License.
