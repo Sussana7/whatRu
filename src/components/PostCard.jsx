@@ -10,6 +10,30 @@ function PostCard({
 }) {
   const [showComments, setShowComments] = useState(false);
   const [commentText, setCommentText] = useState("");
+  const [showEmojiPicker, setShowEmojiPicker] = useState(false);
+  const [emojiData, setEmojiData] = useState(null);
+  const [isLoadingEmojis, setIsLoadingEmojis] = useState(false);
+
+  const fetchEmojiData = async () => {
+    if (emojiData) return;
+
+    setIsLoadingEmojis(true);
+    try {
+      const response = await fetch(
+        "https://cdn.jsdelivr.net/npm/@emoji-mart/data"
+      );
+      const data = await response.json();
+      setEmojiData(data);
+    } catch (error) {
+      console.error("Failed to load emojis:", error);
+    }
+    setIsLoadingEmojis(false);
+  };
+
+  const handleEmojiSelect = (emoji) => {
+    setCommentText(commentText + emoji);
+    setShowEmojiPicker(false);
+  };
 
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-md dark:shadow-gray-900/50">
@@ -84,11 +108,46 @@ function PostCard({
               )}
             </div>
 
-            <div className="flex gap-2">
+            <div className="flex gap-2 relative">
               <Smile
                 size={24}
-                className="text-red-700"
+                className="text-red-700 cursor-pointer hover:text-red-800"
+                onClick={() => {
+                  setShowEmojiPicker(!showEmojiPicker);
+                  if (!emojiData) fetchEmojiData();
+                }}
               />
+
+              {/* Emoji Picker Popup */}
+              {showEmojiPicker && (
+                <div className="absolute bottom-12 left-0 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg shadow-lg p-3 w-80 h-64 overflow-y-auto z-10">
+                  {isLoadingEmojis ? (
+                    <p className="text-center text-gray-500 dark:text-gray-400">
+                      Loading emojis...
+                    </p>
+                  ) : emojiData ? (
+                    <div className="grid grid-cols-8 gap-2">
+                      {Object.entries(emojiData.emojis)
+                        .slice(0, 100)
+                        .map(([id, emoji]) => (
+                          <button
+                            key={id}
+                            className="text-2xl hover:bg-gray-100 dark:hover:bg-gray-600 rounded p-1"
+                            onClick={() =>
+                              handleEmojiSelect(emoji.skins[0].native)
+                            }
+                          >
+                            {emoji.skins[0].native}
+                          </button>
+                        ))}
+                    </div>
+                  ) : (
+                    <p className="text-center text-gray-500 dark:text-gray-400">
+                      Failed to load emojis
+                    </p>
+                  )}
+                </div>
+              )}
 
               <input
                 type="text"
