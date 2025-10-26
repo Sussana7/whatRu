@@ -89,15 +89,20 @@ Below is an image...
 * State management with multiple levels of data
 
 
-### Day 6
+### Day 6 😄Emoji Integration in Comments with the use of API's ✅ COMPLETED
+* Fetched emoji data from @emoji-mart/data CDN when user first clicks the smiley icon
+* Cached the data in React state to avoid repeated API calls
+* Displayed emojis in a scrollable grid popup positioned above the comment input
+* Inserted selected emoji into the comment text when clicked
+
+
+### Day 7
 * Show the number of comments beside the comment icon
 * Sort posts by newest first
 * Icon that displays notification (For now, it’ll just be a static or inactive button, until backend setup)
 * Search bar to find posts (functionality to be added later)
 * Share button (functionality to be added later)
 
-### Day 7
-* 😄Emoji Integration in Comments with the use of API's
 
 
 ## 🎨 Color Palette
