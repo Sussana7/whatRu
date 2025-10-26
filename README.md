@@ -89,7 +89,7 @@ Below is an image...
 * State management with multiple levels of data
 
 
-### Day 6 😄Emoji Integration in Comments with the use of API's ✅ COMPLETED
+### Day 6 - Emoji Integration in Comments ✅ COMPLETED* 
 * Fetched emoji data from @emoji-mart/data CDN when user first clicks the smiley icon
 * Cached the data in React state to avoid repeated API calls
 * Displayed emojis in a scrollable grid popup positioned above the comment input
