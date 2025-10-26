@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Heart, MessageCircle, X } from "lucide-react";
+import { Heart, MessageCircle, Smile, X } from "lucide-react";
 
 function PostCard({
   post,
@@ -84,8 +84,12 @@ function PostCard({
               )}
             </div>
 
-            {/* Add Comment Input */}
             <div className="flex gap-2">
+              <Smile
+                size={24}
+                className="text-red-700"
+              />
+
               <input
                 type="text"
                 placeholder="Add a comment..."
@@ -94,11 +98,11 @@ function PostCard({
                 className="flex-1 border rounded-lg px-3 py-1.5 text-sm dark:bg-gray-700 dark:border-gray-600 dark:text-white"
               />
               <button
-                className="bg-blue-500 text-white px-3 py-1.5 rounded-lg hover:bg-blue-600 text-sm"
+                className="bg-red-700 text-white px-3 py-1.5 rounded-lg hover:bg-blue-600 text-sm"
                 onClick={() => {
                   if (commentText.trim() !== "") {
                     onAddComment(commentText);
-                    setCommentText(""); 
+                    setCommentText("");
                   }
                 }}
               >
